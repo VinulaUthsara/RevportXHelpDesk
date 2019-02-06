@@ -1,0 +1,80 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    background-color: #33495f;    
+}
+
+#logo{
+    width: 10em;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+}
+
+.footer p{
+    color: #fff;
+    margin-bottom: 0;
+    padding-top: 1em;
+    text-align: center;
+}
+
+/* Chatbox */
+.chatbox {
+	width:80%;
+	height:600px;
+	background:#fff;
+	padding:25px;
+}
+
+.chatlogs {
+	padding: 10px;
+	width: 100%;
+	height: 450px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.chatlogs::-webkit-scrollbar {
+	width: 10px;
+}
+
+.chatlogs::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: rgba(0,0,0,.1);
+}
+
+.chat {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+
+.chat .chat-message {
+	width: 80%;
+	padding: 15px;
+	margin: 5px 10px 0;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.friend .chat-message {
+	background: #1adda4;
+}
+
+.self .chat-message {
+	background: #f28500;
+    order: -1;
+}
+
+.textarea {
+	resize: none;
+}
